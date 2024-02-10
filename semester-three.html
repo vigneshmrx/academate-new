@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Three</title>
+
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/sem-three-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="./index.html" class="px-6 py-1 w-full inline-block">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 w-full inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="#" class="px-6 py-1 w-full text-white bg-black rounded-md">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full inline-block">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="./index.html" class="px-2.5">Home</a>
+                <a href="./semester-one.html" class="px-2.5">Sem 1</a>
+                <a href="./semester-two.html" class="px-2.5">Sem 2</a>
+                <a href="#" class="px-4 py-1 bg-white text-black rounded-md">Sem 3</a>
+                <a href="./semester-four.html" class="px-2.5">Sem 4</a>
+                <a href="./semester-five.html" class="px-2.5">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-end mt-14">
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="lg:px-44 mt-2.5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ Semester Three ~</div>
+
+        <div id="section-content" class="text-center my-6">
+            <div class="text-xl lg:text-3xl font-bold">Subjects</div>
+
+            <div class="underline-box w-12 h-1 mx-auto my-1.5"></div>
+
+            <div id="subject-list-box py-5">
+                <a href="ds-cpp.html" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-3 text-base lg:text-xl hover:bg-white hover:text-black" style="font-family: 'Roboto Mono', monospace;">
+                        Data Structures
+                    </div>
+                </a>
+
+                <a href="https://mega.nz/folder/Og8nWTZD#e9xeUrdajyiLg0N20he02w" target="_blank" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-2 border-white py-3 text-base lg:text-xl hover:bg-white hover:text-black" style="font-family: 'Roboto Mono', monospace;">
+                        HTML, JS & VBS
+                    </div>
+                </a>
+
+                <a href="https://mega.nz/folder/K8tz0YSa#oluw4Zw6ZTLQGp6msneLIw" target="_blank"  class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-2 border-white py-3 text-base lg:text-xl hover:bg-white hover:text-black" style="font-family: 'Roboto Mono', monospace;">
+                        Cloud Security
+                    </div>
+                </a>
+
+                <a href="https://mega.nz/folder/D5NQEDJY#VOhdBXGtdXjy6MMdQijxog" target="_blank" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-2 border-white py-3 text-base lg:text-xl hover:bg-white hover:text-black" style="font-family: 'Roboto Mono', monospace;">
+                        English
+                    </div>
+                </a>
+
+                <a href="https://mega.nz/folder/6l9xARwY#ZTVHcjnT8a3WzL0vNQSBJg" target="_blank" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-2 border-white py-3 text-base lg:text-xl hover:bg-white hover:text-black" style="font-family: 'Roboto Mono', monospace;">
+                        Hindi
+                    </div>
+                </a>
+
+                <a href="https://mega.nz/folder/LwcDWYCC#s6gKbwo_5aTdh9AqIKoX7w" target="_blank"  class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-3 text-base lg:text-xl hover:bg-white hover:text-black" style="font-family: 'Roboto Mono', monospace;">
+                        Soft Skills - 1
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="course-details-section" class="my-14 w-5/6 mx-auto">
+            <div class="details-heading text-lg font-bold">Practical Subjects</div>
+            <div class="underline-box w-12 h-1 my-1.5"></div>
+            <div class="sub-names text-base md:text-lg">
+                - Data Structures using C++ <br>
+                - HTML, JavaScript and VBScript
+            </div>
+            <br><br>
+
+            <div class="details-heading text-lg font-bold">Theory Subjects</div>
+            <div class="underline-box w-12 h-1 my-1.5"></div>
+            <div class="sub-names text-base md:text-lg">
+                - Cloud Security (may vary)   <br>
+                - Soft Skills - 1 (may vary) <br>
+                - English <br>
+                - Hindi
+            </div>
+            <br><br><br>
+
+            <div class="details-heading text-base md:text-lg">Notes for all the subjects can be found here:</div>
+            <a href="https://mega.nz/folder/7x9hyZCY#Z4LXpqSzNcti5z8wsVSgzg" target="_blank"><button class="multipurpose-btn mx-5 uppercase">Click Me</button></a>
+        </div>
+
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
