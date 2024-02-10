@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming</title>
+
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/sem-one-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="./index.html" class="px-6 py-1 w-full inline-block">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 bg-black text-white rounded-md">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full inline-block">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="./index.html" class="px-2.5">Home</a>
+                <a href="./semester-one.html" class="px-4 py-1 bg-white text-black rounded-md">Sem 1</a>
+                <a href="./semester-two.html" class="px-2.5">Sem 2</a>
+                <a href="./semester-three.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-four.html" class="px-2.5">Sem 4</a>
+                <a href="./semester-five.html" class="px-2.5">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-between items-center mt-14">
+        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;">SEM 1 / C Programming</div>
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="lg:px-44 mt-2.5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ Programming in C ~</div>
+
+        <div id="section-content" class="text-center my-6">
+            <div class="text-xl lg:text-3xl font-bold">Programs</div>
+
+            <div class="underline-box w-12 h-1 mx-auto my-1.5"></div> <br>
+
+            <div class="text-left w-5/6 mx-auto text-xl font-bold">Part A ~</div>
+
+            <div id="subject-list-box py-5">
+                <a href="https://ringed-meter-575.notion.site/Question-1-6137b3b0ed2944bf87f85047da6e332c?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        1. Largest of three numbers
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-2-a6887363cf294379a2ddda7637d95755?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        2. N Fibonacci series
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-3-c4534216ca8b4eb6ab05507007c6fdc6?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        3. Tax rate and gross salary of an employee
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-4-f8d71c14b7744a318a8a1d6490c30f05?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        4. Reverse a number and find the sum of individual digits and also check for palindrome
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-5-d02079ac3beb474387724fe87b5168b1?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        5. LCM and GCD
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-6-1a6eb4b9581c477e9e48340b15d20e45?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        6. To check if a number is prime or not
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-7-79b908ccc6bd40529c62c8e463d18cd2?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        7. Convert decimal number to binary equivalent
+                    </div>
+                </a> <br><br><br>
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part B ~</div>
+
+                <a href="https://ringed-meter-575.notion.site/Question-1-b4212f340c70453f8b38707537ccda74?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        1. Sum and average of numbers in an array
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-2-6eb07053dd254096a5fb8e931555a730?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        2. Largest and smallest number in an array
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-3-fc533fc0bfd446aeb811a35ab05496f3?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        3. Transpose of a matrix and also to check the symmetry of the matrix
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-4-7ef72af89a034415b8f47fbaa031e1cf?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        4. Multiplication of two matrices
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-5-351a98031f674378aedf1ec9403a8244?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        5. To check if a string is palindrome or not
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/Question-6-5d5a15740855419185618745bc03ef30?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        6. Factorial of first 'n' integers using recursion
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
