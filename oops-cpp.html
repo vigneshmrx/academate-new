@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/curly-brackets.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="./index.html" class="px-6 py-1 w-full inline-block">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 w-full inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full bg-black text-white rounded-md">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full inline-block">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="./index.html" class="px-2.5">Home</a>
+                <a href="./semester-one.html" class="px-2.5">Sem 1</a>
+                <a href="./semester-two.html" class="px-4 py-1 bg-white text-black rounded-md">Sem 2</a>
+                <a href="./semester-three.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-four.html" class="px-2.5">Sem 4</a>
+                <a href="./semester-five.html" class="px-2.5">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-between items-center mt-14">
+        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;"><a href="./semester-two.html">SEM 2</a> / OOPS in C++</div>
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="lg:px-44 mt-5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ OOPS in C++ ~</div>
+
+        <div id="section-content" class="text-center my-6">
+            <div class="text-xl lg:text-3xl font-bold">Programs</div>
+
+            <div class="underline-box w-12 h-1 mx-auto my-1.5"></div> <br>
+
+            <div class="text-left w-5/6 mx-auto text-xl font-bold">Part A ~</div>
+
+            <div id="subject-list-box py-5">
+                <a href="https://ringed-meter-575.notion.site/1-To-compute-SI-using-member-functions-d46db219e4fb428aa1111a427bbd9d41?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        1. To compute Simple Interest using member functions
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/2-Addition-subtraction-of-complex-numbers-c5ba207c0e9a49aea6d0ba3c31ccd8f0?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        2. Addition and subtraction of complex numbers
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/3-Volume-of-cube-cuboid-and-cylinder-using-function-overloading-dfa2b6f182df41d6ae6d00b7fc30dd75?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        3. Volumne of cube, cuboid and cylinder using function overloading
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/4-To-add-two-distances-using-object-as-function-arguments-inches-should-not-be-12-6b302f2e9c7c43789303ae3d92646f82?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        4. To add two distances using object as function arguments
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/5-Library-information-system-248e4457b4cf4d62a9a963e5a82128c0?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        5. Library Information System
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/6-Area-of-rectangle-and-cuboid-using-single-inheritance-7b56c9321dcb40778b87ad573efe958e?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        6. Area of rectangle & cuboid using single inheritance
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/7-Concept-of-pointer-to-objects-b2b49f4c9de94bebac0e62f2ad97e359?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        7. Concept of pointer to objects
+                    </div>
+                </a> 
+                
+                <a href="https://ringed-meter-575.notion.site/8-To-add-sub-multi-div-two-numbers-using-class-template-f39855c28a4b456384704bff380d1366?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left hover:font-bold" style="font-family: 'Roboto Mono', monospace;">
+                        8. To add, sub, multiply & divide two numbers using class template
+                    </div>
+                </a> <br><br><br>
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part B ~</div>
+
+                <a href="https://ringed-meter-575.notion.site/1-Find-quadratic-roots-6ec9b1bf4c934d4d98a9ff7e53fb76aa?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        1. Finding quadratic roots
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/2-Compute-total-marks-and-declare-the-result-using-array-of-objects-f0b362a015e548c38cda425274251b64?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        2. Compute total marks and declare the result using array of objects
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/3-Bank-transactions-dba55f26a1ed4084b66d207d0f1e6044?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        3. Bank transactions
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/4-Class-graphics-which-stores-shapes-area-back-color-and-fore-color-238070912dec498c80f299d85bd4576a?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        4. Class graphics which stores shapes, area, back color & fore color
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/5-To-accept-two-strings-and-using-operator-overloading-d95d764a7142404d9d92d2a0a1e6e97a?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        5. To accept two strings and using operator overloading
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/6-Menu-driven-time-program-5d8c9db6364a43079c96fc28fd33edc3?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        6. Menu driven time program
+                    </div>
+                </a>
+
+                <a href="https://ringed-meter-575.notion.site/7-Multiple-inheritance-3f7a4ea2b8d549c7a3059c8eb64e0210?pvs=4" class="inline-block w-5/6 mx-auto my-2">
+                    <div class="individual-box border-2 border-white py-2 px-4 text-base hover:bg-white hover:text-black text-left" style="font-family: 'Roboto Mono', monospace;">
+                        7. Program to implement multiple inheritance
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
