@@ -10,15 +10,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300">
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="#" class="px-6 py-1 w-full bg-black text-white rounded-md">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full inline-block">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
     <header>
-        <nav class="h-14 border-b-2 flex justify-between items-center px-3 md:px-10 xl:px-20">
+        <nav class="h-14 border-b-2 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
             <div id="logo" class="text-3xl mt-1.5">
                 AcadeMate
             </div>
 
-            <div id="nav-links" class="text-lg hidden xl:block">
-                <a href="#" class="px-2.5 border-b-4 border-black">Home</a>
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="#" class="px-4 py-1 bg-white text-black rounded-md">Home</a>
                 <a href="./semester-one.html" class="px-2.5">Sem 1</a>
                 <a href="./semester-two.html" class="px-2.5">Sem 2</a>
                 <a href="./semester-thre.html" class="px-2.5">Sem 3</a>
@@ -26,15 +54,15 @@
                 <a href="./semester-five.html" class="px-2.5">Sem 5</a>
             </div>
 
-            <div id="ham-menu" class="block xl:hidden cursor-pointer">
-                <div class="bar w-8 h-1 md:w-9 bg-black my-1"></div>
-                <div class="bar w-8 md:w-9 h-1 bg-black my-1"></div>
-                <div class="bar w-8 md:w-9 h-1 bg-black my-1"></div>
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 h-1 md:w-9 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
             </div>
         </nav>
     </header>
 
-    <div id="theme-changing-btn-area" class="flex justify-end">
+    <div id="theme-changing-btn-area" class="flex justify-end mt-14">
         <div class="toggle-switch">
             <label class="switch-label">
               <input type="checkbox" class="checkbox">
@@ -43,7 +71,7 @@
           </div>
     </div>
 
-    <section class="px-2.5 md:px-20 xl:px-44 my-52 md:my-60 intro">
+    <section class="px-2.5 md:px-20 xl:px-44 my-56 md:my-60 intro">
         <div class="font-bold text-xl md:text-3xl xl:text-5xl text-center">
             Welcome to <span class="academate">AcadeMate</span>,<br> your personal College Productivity System.
         </div>
@@ -53,7 +81,7 @@
     </section>
 
     <footer class="border-t-2 p-2.5">
-        <div class="copyright-area font-bold text-center text-base xl:text-xl"></div>
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
     </footer>
 
     <script src="./js/script.js"></script>

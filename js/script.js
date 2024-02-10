@@ -11,3 +11,16 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 });
+
+const navBarFun = (toShowOrNot) => {
+    console.log("Called");
+    let secondaryNavMenu = document.getElementById("secondary-nav-links");
+
+    if (toShowOrNot == true) {
+        secondaryNavMenu.style.visibility = "visible";
+        secondaryNavMenu.style.transform = "translateX(0px)";
+    } else {
+        secondaryNavMenu.style.visibility = "hidden";
+        secondaryNavMenu.style.transform = "translateX(24rem)";
+    }
+}
