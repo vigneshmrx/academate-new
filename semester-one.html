@@ -11,12 +11,12 @@
 </head>
 <body>
     <header>
-        <nav class="h-14 border-b-2 flex justify-between items-center px-20">
+        <nav class="h-14 border-b-2 flex justify-between items-center px-3 md:px-10 xl:px-20">
             <div id="logo" class="text-3xl mt-1.5">
                 AcadeMate
             </div>
 
-            <div id="nav-links" class="text-lg">
+            <div id="nav-links" class="text-lg hidden xl:block">
                 <a href="./index.html" class="px-2.5">Home</a>
                 <a href="#" class="px-2.5 border-b-4 border-black">Sem 1</a>
                 <a href="./semester-two.html" class="px-2.5">Sem 2</a>
@@ -25,10 +25,10 @@
                 <a href="./semester-five.html" class="px-2.5">Sem 5</a>
             </div>
 
-            <div id="ham-menu" class="hidden">
-                <div class="bar w-10 h-1.5 bg-black my-1"></div>
-                <div class="bar w-10 h-1.5 bg-black my-1"></div>
-                <div class="bar w-10 h-1.5 bg-black my-1"></div>
+            <div id="ham-menu" class="block xl:hidden">
+                <div class="bar w-9 h-1 bg-black my-1"></div>
+                <div class="bar w-9 h-1 bg-black my-1"></div>
+                <div class="bar w-9 h-1 bg-black my-1"></div>
             </div>
         </nav>
     </header>
@@ -42,65 +42,65 @@
           </div>
     </div>
 
-    <section class="md:px-44 mt-2.5" style="font-family: 'Roboto Mono', monospace;">
-        <div id="section-heading" class="text-center text-4xl font-bold">~ Semester One ~</div>
+    <section class="lg:px-44 mt-2.5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ Semester One ~</div>
 
         <div id="section-content" class="text-center my-6">
-            <div class="text-3xl font-bold">Subjects</div>
+            <div class="text-xl lg:text-3xl font-bold">Subjects</div>
 
             <div class="underline-box w-12 h-1 mx-auto my-1.5"></div>
 
             <div id="subject-list-box py-5">
-                <a href="c-programming.html">
-                    <div class="individual-box border-4 border-black py-3 text-xl lg:w-2/3 w-5/6 mx-auto my-5 hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
+                <a href="c-programming.html" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">
+                    <div class="individual-box border-4 border-black py-3 text-base lg:text-xl hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
                         C Programming
                     </div>
                 </a>
 
-                <a href="https://mega.nz/folder/bsMRlK7Y#aPk1yUKeh3_FgYTKb5jr8g">
-                    <div class="individual-box border-4 border-black py-3 text-xl lg:w-2/3 w-5/6 mx-auto my-5 hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
+                <a href="https://mega.nz/folder/bsMRlK7Y#aPk1yUKeh3_FgYTKb5jr8g" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-4 border-black py-3 text-base lg:text-xl hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
                         FIT
                     </div>
                 </a>
 
-                <a href="https://mega.nz/folder/a58x0R4K#eM_ZdSUsdc-2xQGBe2hq-A">
-                    <div class="individual-box border-4 border-black py-3 text-xl lg:w-2/3 w-5/6 mx-auto my-5 hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
+                <a href="https://mega.nz/folder/a58x0R4K#eM_ZdSUsdc-2xQGBe2hq-A"  class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-4 border-black py-3 text-base lg:text-xl hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
                         Internet Basics & Web Design
                     </div>
                 </a>
 
-                <a href="https://mega.nz/folder/Pll0FSBJ#7RaEdjeZhtKFniPV0dBcVQ">
-                    <div class="individual-box border-4 border-black py-3 text-xl lg:w-2/3 w-5/6 mx-auto my-5 hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
+                <a href="https://mega.nz/folder/Pll0FSBJ#7RaEdjeZhtKFniPV0dBcVQ" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-4 border-black py-3 text-base lg:text-xl hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
                         English
                     </div>
                 </a>
 
-                <a href="https://mega.nz/folder/r0kFUYSZ#j4G9zUX_g1tH2ChY_Axk2Q">
-                    <div class="individual-box border-4 border-black py-3 text-xl lg:w-2/3 w-5/6 mx-auto my-5 hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
+                <a href="https://mega.nz/folder/r0kFUYSZ#j4G9zUX_g1tH2ChY_Axk2Q" class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">  
+                    <div class="individual-box border-4 border-black py-3 text-base lg:text-xl hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
                         Hindi
                     </div>
                 </a>
 
-                <a href="#">
-                    <div class="individual-box border-4 border-black py-3 text-xl lg:w-2/3 w-5/6 mx-auto my-5 hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
+                <a href="#"  class="inline-block xl:w-2/3 w-5/6 mx-auto my-2">
+                    <div class="individual-box border-4 border-black py-3 text-base lg:text-xl hover:bg-black hover:text-white" style="font-family: 'Roboto Mono', monospace;">
                         Food Hygene (OE)
                     </div>
                 </a>
             </div>
         </div>
 
-        <div id="course-details-section" class="my-16">
+        <div id="course-details-section" class="my-14 w-5/6 mx-auto">
             <div class="details-heading text-lg font-bold">Practical Subjects</div>
             <div class="underline-box w-12 h-1 my-1.5"></div>
-            <div class="sub-names text-lg">
+            <div class="sub-names text-base md:text-lg">
                 - C Programming <br>
                 - Fundamentals of Internet Techology (FIT)
             </div>
-            <br><br><br>
+            <br><br>
 
             <div class="details-heading text-lg font-bold">Theory Subjects</div>
             <div class="underline-box w-12 h-1 my-1.5"></div>
-            <div class="sub-names text-lg">
+            <div class="sub-names text-base md:text-lg">
                 - Internet Basics and Web Design   <br>
                 - Open Elective - Food Hygiene and Safety (may vary) <br>
                 - English <br>
@@ -119,7 +119,7 @@
     </a>
 
     <footer class="border-t-2 p-2.5">
-        <div class="copyright-area font-bold text-center text-xl"></div>
+        <div class="copyright-area font-bold text-center text-base xl:text-xl"></div>
     </footer>
 
     <script src="./js/script.js"></script>
