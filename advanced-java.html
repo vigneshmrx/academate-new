@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Java</title>
+
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/curly-brackets.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="./index.html" class="px-6 py-1 w-full inline-block">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 w-full inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block ">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full bg-black text-white rounded-md">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="./index.html" class="px-2.5">Home</a>
+                <a href="./semester-one.html" class="px-2.5">Sem 1</a>
+                <a href="./semester-two.html" class="px-2.5">Sem 2</a>
+                <a href="./semester-three.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-four.html" class="px-2.5">Sem 4</a>
+                <a href="./semester-five.html" class="px-4 py-1 bg-white text-black rounded-md">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-between items-center mt-14">
+        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;"><a href="./semester-five.html">SEM 5</a> / Advanced Java</div>
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="lg:px-44 mt-5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ Advanced Java ~</div>
+
+        <div id="section-content" class="text-center my-6">
+            <div class="text-xl lg:text-3xl font-bold">Programs</div>
+
+            <div class="underline-box w-12 h-1 mx-auto mb-1.5"></div> <br>
+
+            <div id="subject-list-box py-5">
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part A ~</div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-70c1b1a14a3e4c419a4393e4b345eea2?pvs=4" class="hover:border-b-2 hover:italic">
+                        Applet program to draw a face</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA1.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-9e01bbf23ee14dbe84c386f917a62506?pvs=4" class="hover:border-b-2 hover:italic">
+                        Applet program to implement a simple calculator</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA2.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-536bb82eeeab4bd9add68aed850999d2?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to copy characters from one file to another</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA3.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-55a9541e0f674bf1a18a8200da1d5c4b?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program for reading and writing a random access file</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA4.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-e531c503bc9d4b128ac5211703f7478e?pvs=4" class="hover:border-b-2 hover:italic">
+                        Applet program to find gross and net salary</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA5.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-d96236e10acc40c2a0abea5ffef93f45?pvs=4" class="hover:border-b-2 hover:italic">
+                        Calculating discount for a book using the swing component</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA6.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    7. <a href="https://ringed-meter-575.notion.site/Question-7-c84a25491596403da188d92f2a18dfe2?pvs=4" class="hover:border-b-2 hover:italic">
+                        Generating electricity bill using swing component</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartA7.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                <br><br><br>
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part B ~</div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-84bea4040f4241d9a1fe4c9574fda1ed?pvs=4" class="hover:border-b-2 hover:italic">
+                        JDBC program to process bank transaction</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartB1.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-489eafcb188e42d89599e14968912af5?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to retrieve details from telephone directory</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartB2.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-efad3cde9e814e7ebf7840e1bdc07891?pvs=4" class="hover:border-b-2 hover:italic">
+                        RMI program to convert Celsius to Fahrenheit and vice versa</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartB3.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-fbdd92ed85524482b8ee1bf5c339493b?pvs=4" class="hover:border-b-2 hover:italic">
+                        RMI program to calculate SI</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartB4.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-5cefa9fa873048138382a408a7281c78?pvs=4" class="hover:border-b-2 hover:italic">
+                        RMI program to calculate tax depending no salary</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartB5.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-a37176f060aa4355812aa46f4fde0ded?pvs=4" class="hover:border-b-2 hover:italic">
+                        RMI program to convert dollar to rupees using command line argument</a>. <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Programs/advancedJavaPartB6.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                <br><br>
+
+                <div class="text-xl lg:text-3xl font-bold">Notes</div>
+
+                <div class="underline-box w-8 h-1 mx-auto mb-1.5"></div>
+                <br>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/AdvancedJava/Notes/unitOne.pdf" class="hover:border-b-2 hover:italic">
+                        Unit One
+                    </a> <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Notes/unitOne.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/AdvancedJava/Notes/unitTwo.pdf" class="hover:border-b-2 hover:italic">
+                        Unit Two
+                    </a> <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Notes/unitTwo.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/AdvancedJava/Notes/unitThree.pdf" class="hover:border-b-2 hover:italic">
+                        Unit Three
+                    </a> <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Notes/unitThree.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/AdvancedJava/Notes/adv_java_QB.pdf" class="hover:border-b-2 hover:italic">
+                        Question Bank
+                    </a> <br>
+                    <a href="pdfs/sem_5/AdvancedJava/Notes/adv_java_QB.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

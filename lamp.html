@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMP</title>
+
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/curly-brackets.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="./index.html" class="px-6 py-1 w-full inline-block">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 w-full inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block ">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full inline-block">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full bg-black text-white rounded-md">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="./index.html" class="px-2.5">Home</a>
+                <a href="./semester-one.html" class="px-2.5">Sem 1</a>
+                <a href="./semester-two.html" class="px-2.5">Sem 2</a>
+                <a href="./semester-three.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-four.html" class="px-2.5">Sem 4</a>
+                <a href="./semester-five.html" class="px-4 py-1 bg-white text-black rounded-md">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-between items-center mt-14">
+        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;"><a href="./semester-five.html">SEM 5</a> / LAMP</div>
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="lg:px-44 mt-5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ Linux, Apache, MySQL & PHP ~</div>
+
+        <div id="section-content" class="text-center my-6">
+            <div class="text-xl lg:text-3xl font-bold">Programs</div>
+
+            <div class="underline-box w-12 h-1 mx-auto mb-1.5"></div> <br>
+
+            <div id="subject-list-box py-5">
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part A ~</div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-1d54a59b7cc5424280f70d6a29f0c208?pvs=4" class="hover:border-b-2 hover:italic">
+                        Php program to check for armstrong number</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA1.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-719f788ea293436db97435c0e5e2df13?pvs=4" class="hover:border-b-2 hover:italic">
+                        Php program to demonstrate the date function</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA2.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-0bcb15b644fa46e28950097841cae332?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to demonstrate array concept and store marks of three students</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA3.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-6fb351fb80b94c01bf5ad3f5a0cfc1fe?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to generate a simple calculator</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA4.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-f7bf5800a74745da8646460b6c609338?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to demonstrate $_POST method and display pattern</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA5.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-34caee8c59f44834ae489a826c69dc87?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to upload a file and display the image details</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA6.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    7. <a href="https://ringed-meter-575.notion.site/Question-7-c96ce3f581fb4a5f98aaa17af559858c?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to check if a number is palindrome or not</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA7.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    8. <a href="https://ringed-meter-575.notion.site/Question-8-68ab5c7284c84dcd8074fdeb2e5a8e58?pvs=4" class="hover:border-b-2 hover:italic">
+                        Progarm to insert and display values from different input fields</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartA8.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                <br><br><br>
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part B ~</div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-1c7b5025988e4d92836e0d570cb124ea?pvs=4" class="hover:border-b-2 hover:italic">
+                        To create DB, create table and delete the DB</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB1.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-ed1de5e2da5644ebb99146db89550337?pvs=4" class="hover:border-b-2 hover:italic">
+                        To insert employee record and display the records in table format</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB2.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-8c9d8e7190bc43f79ed70e1e3a9b9d65?pvs=4" class="hover:border-b-2 hover:italic">
+                        Inserting user details in the DB and deleting them individually if needed</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB3.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-fdba2f660aef409c9231035a6d2b4ecb?pvs=4" class="hover:border-b-2 hover:italic">
+                        To display employee details and modify the details if needed</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB4.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-792446b44f02495eb7470ef1a7d9f00b?pvs=4" class="hover:border-b-2 hover:italic">
+                        Php script to login using session variable and destroy the session variable</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB5.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-0d83fb0c38d248e3b6e35187fd5fe392?pvs=4" class="hover:border-b-2 hover:italic">
+                        Php script to display 3 records per page using paging</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB6.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    7. <a href="https://ringed-meter-575.notion.site/Question-7-39fca283f7264f7198ae82777638a297?pvs=4" class="hover:border-b-2 hover:italic">
+                        Php script to add photos and display only five images per row</a>. <br>
+                    <a href="pdfs/sem_5/Php/Programs/lampPartB7.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                <br><br>
+
+                <div class="text-xl lg:text-3xl font-bold">Notes</div>
+
+                <div class="underline-box w-8 h-1 mx-auto mb-1.5"></div>
+                <br>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/Php/Notes/unitOneToThree.pdf" class="hover:border-b-2 hover:italic">
+                        Unit 1 - 3 (pdf)
+                    </a> <br>
+                    <a href="pdfs/sem_5/Php/Notes/unitOneToThree.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/Php/Notes/allUnits.docx" class="hover:border-b-2 hover:italic">
+                        All unit notes (word)
+                    </a> <br>
+                    <a href="pdfs/sem_5/Php/Notes/allUnits.docx" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_5/Php/Notes/lamp_qb_with_answers.docx" class="hover:border-b-2 hover:italic">
+                        Question Bank (word)
+                    </a> <br>
+                    <a href="pdfs/sem_5/Php/Notes/lamp_qb_with_answers.docx" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
