@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Java</title>
+
+    <script src="https://kit.fontawesome.com/0595897d0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/curly-brackets.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <div id="secondary-nav-links" class="fixed top-0 right-0 bg-white w-56 z-50 h-full invisible translate-x-96 transition-all duration-300" >
+
+        <div id="close-icon" class="mt-2.5 ml-2.5">
+            <img src="./icons/icons8-close-64.png" alt="" class="w-9 h-9 cursor-pointer" onclick="navBarFun(false);">
+        </div>
+
+        <div id="nav-links" class="text-2xl text-black text-center uppercase my-5">
+            <a href="./index.html" class="px-6 py-1 w-full inline-block">
+                Home
+            </a>
+            <a href="./semester-one.html" class="px-6 py-1 w-full inline-block">
+                Sem 1
+            </a>
+            <a href="./semester-two.html" class="px-6 py-1 w-full inline-block">
+                Sem 2
+            </a>
+            <a href="./semester-three.html" class="px-6 py-1 w-full inline-block ">
+                Sem 3
+            </a>
+            <a href="./semester-four.html" class="px-6 py-1 w-full bg-black text-white rounded-md">
+                Sem 4
+            </a>
+            <a href="./semester-five.html" class="px-6 py-1 w-full inline-block">
+                Sem 5
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav class="h-14 flex justify-between items-center px-3 md:px-10 xl:px-20 fixed top-0 w-full z-40 bg-black">
+            <div id="logo" class="text-3xl mt-1.5">
+                AcadeMate
+            </div>
+
+            <div id="nav-links" class="text-lg hidden xl:block uppercase">
+                <a href="./index.html" class="px-2.5">Home</a>
+                <a href="./semester-one.html" class="px-2.5">Sem 1</a>
+                <a href="./semester-two.html" class="px-2.5">Sem 2</a>
+                <a href="./semester-three.html" class="px-2.5">Sem 3</a>
+                <a href="./semester-four.html" class="px-4 py-1 bg-white text-black rounded-md">Sem 4</a>
+                <a href="./semester-five.html" class="px-2.5">Sem 5</a>
+            </div>
+
+            <div id="ham-menu" class="block xl:hidden cursor-pointer" onclick="navBarFun(true);">
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+                <div class="bar w-8 md:w-9 h-1 bg-white my-1"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="theme-changing-btn-area" class="flex justify-between items-center mt-14">
+        <div class="ml-5 lg:text-lg text-base uppercase" style="font-family: 'Roboto Mono', monospace;"><a href="./semester-four.html">SEM 4</a> / Core Java</div>
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    </div>
+
+    <section class="lg:px-44 mt-5" style="font-family: 'Roboto Mono', monospace;">
+        <div id="section-heading" class="text-center lg:text-4xl text-2xl font-bold">~ Core Java ~</div>
+
+        <div id="section-content" class="text-center my-6">
+            <div class="text-xl lg:text-3xl font-bold">Programs</div>
+
+            <div class="underline-box w-12 h-1 mx-auto mb-1.5"></div> <br>
+
+            <div id="subject-list-box py-5">
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part A ~</div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-a8b06de2451e4d959219a2e058364339?pvs=4" class="hover:border-b-2 hover:italic">
+                        Integers that are greater than 100 and less than 200 and divisible by 7
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA1.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-e0c0e73b05394e6898d3ddbcf72a4bf0?pvs=4" class="hover:border-b-2 hover:italic">
+                        Two words separated by enough dots so that the total line length is 30
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA2.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-958637e2034641aa9acc4ac705b52256?pvs=4" class="hover:border-b-2 hover:italic">
+                        Concatination of two strings using command line arguments
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA3.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-18be7c1891e84c89b825677f803292a3?pvs=4" class="hover:border-b-2 hover:italic">
+                        Addition of no's between a range
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA4.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-d1ee7af3010c4ee0bc2f7760ee95ca1b?pvs=4" class="hover:border-b-2 hover:italic">
+                        Extracting a portion of a string without using substring() method
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA5.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-03ba7cc30e524b1aa067e778c1c76962?pvs=4" class="hover:border-b-2 hover:italic">
+                        Vector to store shopping list of items
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA6.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    7. <a href="https://ringed-meter-575.notion.site/Question-7-93194a5a7ec74c1a963593567f748f13?pvs=4" class="hover:border-b-2 hover:italic">
+                        Sorting list of numbers that are accepted through command line arguments
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA7.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    8. <a href="https://ringed-meter-575.notion.site/Question-8-85d133aa60d340f38318b0bfdfb7288b?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to multiply two matrices
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartA8.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+                <br><br><br>
+
+                <div class="text-left w-5/6 mx-auto text-xl font-bold">Part B ~</div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    1. <a href="https://ringed-meter-575.notion.site/Question-1-b535fe3ebebd48249308a756e4a1ac7f?pvs=4" class="hover:border-b-2 hover:italic">
+                        Calculator using clases (add, subtract, divide and multiply methods)
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB1.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    2. <a href="https://ringed-meter-575.notion.site/Question-2-304057e6ee594af38c13113eacf61632?pvs=4" class="hover:border-b-2 hover:italic">
+                        Student class with fields. Calculate marks for three subjects
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB2.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    3. <a href="https://ringed-meter-575.notion.site/Question-3-ab7b28e076564670b9d7c66e95b857e3?pvs=4" class="hover:border-b-2 hover:italic">
+                        A base class with height, width and depth as data members. A derived class with weight and colour as data members. Program making usage of keyword super
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB3.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    4. <a href="https://ringed-meter-575.notion.site/Question-4-85c5b824a33449c3b9bcb8af856925e5?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to implement multiple inheritance using interface
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB4.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    5. <a href="https://ringed-meter-575.notion.site/Question-5-1fa2421420fe4fbebe3a253b5ecd2a1e?pvs=4" class="hover:border-b-2 hover:italic">
+                        Bank transactions using package
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB5.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    6. <a href="https://ringed-meter-575.notion.site/Question-6-7c2f3de685e24cc5b28598b923420c4b?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to demonstrate the use of feature package. Making two different packages, and importing both of them in a main file
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB6.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    7. <a href="https://ringed-meter-575.notion.site/Question-7-cc950133379a4cf98fe9365973a56753?pvs=4" class="hover:border-b-2 hover:italic">
+                        Program to demonstrate multithreading using runnable interface
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Programs/javaPartB7.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div> <br><br>
+
+                <div class="text-xl lg:text-3xl font-bold">Notes</div>
+
+                <div class="underline-box w-8 h-1 mx-auto mb-1.5"></div>
+                <br>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_4/Java/Notes/unitOne.pdf" class="hover:border-b-2 hover:italic">
+                        Unit One
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Notes/unitOne.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_4/Java/Notes/unitTwo.pdf" class="hover:border-b-2 hover:italic">
+                        Unit Two
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Notes/unitTwo.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_4/Java/Notes/unitThree.pdf" class="hover:border-b-2 hover:italic">
+                        Unit Three
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Notes/unitThree.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_4/Java/Notes/unitFour.pdf" class="hover:border-b-2 hover:italic">
+                        Unit Four
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Notes/unitFour.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+
+                <div class="w-5/6 mx-auto my-2 border-2 border-white py-3 px-4 text-base text-left hover:text-underline">
+                    -> <a href="pdfs/sem_4/Java/Notes/unitFive.pdf" class="hover:border-b-2 hover:italic">
+                        Unit Five
+                    </a> <br>
+                    <a href="pdfs/sem_4/Java/Notes/unitFive.pdf" download>
+                        <button class="multipurpose-btn ml-5">DOWNLOAD</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="p-2.5">
+        <div class="copyright-area text-center text-base xl:text-xl"></div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
